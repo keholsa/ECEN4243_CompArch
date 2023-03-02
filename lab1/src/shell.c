@@ -11,14 +11,14 @@
 /*          DO NOT MODIFY THIS FILE!                            */
 /*          You should only change sim.c!                       */
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+#include "shell.h"
+
 
 #include <assert.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <stdint.h>
-
-#include "shell.h"
 
 /***************************************************************/
 /* Main memory.                                                */

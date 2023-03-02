@@ -1,0 +1,3 @@
+C:/Users/19188/Desktop/spring_2023/architecture/labs/ECEN4243_CompArch/lab1/cmake-build-debug/CMakeFiles/lab1.dir
+C:/Users/19188/Desktop/spring_2023/architecture/labs/ECEN4243_CompArch/lab1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/19188/Desktop/spring_2023/architecture/labs/ECEN4243_CompArch/lab1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
