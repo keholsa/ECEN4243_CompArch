@@ -1,0 +1,488 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f MIXED_VERSIONS
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/jstine/ecen4243/ecen4243S23/lab2/hdl
+T_opt
+!s110 1676912625
+V<?9=_zYl@ImO9[SlJHz]k2
+Z2 04 9 4 work testbench fast 0
+=1-d45d645256b9-63f3a7f1-b679d-7915
+Z3 !s124 OEM100
+Z4 o-quiet -auto_acc_if_foreign -work work -debugdb +acc
+Z5 tCvgOpt 0
+n@_opt
+OL;O;2021.3_1;73
+R1
+T_opt1
+!s110 1679428830
+VAIjIL]zDcZ`>YXP<DUGdK2
+R2
+=1-fc3497651485-641a0cde-187-600
+R3
+R4
+R5
+n@_opt1
+Z6 OL;O;2021.1;73
+R1
+T_opt2
+!s110 1679428967
+V<f`gK4dflB2K[eF@dP3OZ3
+R2
+=1-fc3497651485-641a0d67-b1-3f54
+R3
+R4
+R5
+n@_opt2
+R6
+R1
+T_opt3
+!s110 1679432438
+Vh0nc<;JiikBJ^PFBGF@A]0
+R2
+=1-fc3497651485-641a1af5-32a-1064
+R3
+R4
+R5
+n@_opt3
+R6
+vadder
+Z7 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z8 !s110 1679432437
+!i10b 1
+!s100 4DGmALllQG27o?2F3<2eb2
+I0>LT]Kjli0Rbo^Zc>CV;^1
+S1
+Z9 dC:/Users/19188/Desktop/spring_2023/architecture/labs/ECEN4243_CompArch/lab2/hdl
+Z10 w1679432334
+Z11 8riscv_single.sv
+Z12 Friscv_single.sv
+!i122 0
+L0 252 6
+Z13 VDg1SIo80bB@j0V0VzS_@n1
+Z14 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z15 !s108 1679432437.000000
+Z16 !s107 riscv_single.sv|
+Z17 !s90 -reportprogress|300|riscv_single.sv|
+!i113 0
+Z18 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R5
+valu
+R7
+R8
+!i10b 1
+!s100 Eof:3?nSo1^P5LgUeO<[d1
+I8L407zLVd>@ioeg=Z_CM70
+S1
+R9
+R10
+R11
+R12
+!i122 0
+L0 353 35
+R13
+R14
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 0
+R18
+R5
+valudec
+R7
+R8
+!i10b 1
+!s100 <7i>@63eMki5mj@UiS1P^1
+I8@^]QSAbMNHI`MjLPHGGz3
+S1
+R9
+R10
+R11
+R12
+!i122 0
+L0 172 46
+R13
+R14
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 0
+R18
+R5
+vcontroller
+R7
+R8
+!i10b 1
+!s100 ;29L4gS<6[c][VLeW`=W20
+I;z1F8kNRC;EcGAVAZzn`80
+S1
+R9
+R10
+R11
+R12
+!i122 0
+L0 122 20
+R13
+R14
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 0
+R18
+R5
+vdatapath
+R7
+R8
+!i10b 1
+!s100 QFH0X^Xl6V8zSS?^nJa3E2
+IBkX:_mbPbU:QgWMbL;6?c2
+S1
+R9
+R10
+R11
+R12
+!i122 0
+L0 219 32
+R13
+R14
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 0
+R18
+R5
+vdmem
+R7
+R8
+!i10b 1
+!s100 eP0;Ed5ElWGT4`X6zWdL`2
+IT_XT661nPfZ^zgjZfTbCF3
+S1
+R9
+R10
+R11
+R12
+!i122 0
+L0 341 11
+R13
+R14
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 0
+R18
+R5
+vextend
+R7
+R8
+!i10b 1
+!s100 WU]_`X>[T2_BB3[g^97hl3
+Ih>IMzjUMfeP8R1Z41zb0o2
+S1
+R9
+R10
+R11
+R12
+!i122 0
+L0 259 18
+R13
+R14
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 0
+R18
+R5
+vflopenr
+R7
+R8
+!i10b 1
+!s100 iM?U9EC18S]CTC4b=N=312
+IeFl823ehoQ1A;WXHm_BVT0
+S1
+R9
+R10
+R11
+R12
+!i122 0
+L0 289 10
+R13
+R14
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 0
+R18
+R5
+vflopr
+R7
+R8
+!i10b 1
+!s100 CJcciG0bYDacdmCMK<ASK2
+IC3XFPzMMhad1]3im3DQYg3
+S1
+R9
+R10
+R11
+R12
+!i122 0
+L0 278 10
+R13
+R14
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 0
+R18
+R5
+vimem
+R7
+R8
+!i10b 1
+!s100 :oDPMTC7>DoKM^Zdilo:l2
+I`m;H=5zLo``8E:7X;Yi2k2
+S1
+R9
+R10
+R11
+R12
+!i122 0
+L0 332 8
+R13
+R14
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 0
+R18
+R5
+vmaindec
+R7
+R8
+!i10b 1
+!s100 LDT7Rf^U@bKAZE4>;Ra0^3
+I:banL]:f56oO;WV7lDFoe3
+S1
+R9
+R10
+R11
+R12
+!i122 0
+L0 143 28
+R13
+R14
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 0
+R18
+R5
+vmux2
+R7
+R8
+!i10b 1
+!s100 dhL927<H:@:08WMQzm4:j0
+IkokSm`ZBEd7@AbA;6d6Xj0
+S1
+R9
+R10
+R11
+R12
+!i122 0
+L0 300 8
+R13
+R14
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 0
+R18
+R5
+vmux3
+R7
+R8
+!i10b 1
+!s100 _D;mK0PA2X??WLXTEGzZM3
+Ii:m_EGBgF<V<7Z81`I`UJ0
+S1
+R9
+R10
+R11
+R12
+!i122 0
+L0 309 8
+R13
+R14
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 0
+R18
+R5
+vregfile
+R7
+R8
+!i10b 1
+!s100 X9OUb=MaQVl6fgmLYzWLl3
+I2E57R?[OULPbL]TCOTC]L2
+S1
+R9
+R10
+R11
+R12
+!i122 0
+L0 389 25
+R13
+R14
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 0
+R18
+R5
+vriscvsingle
+R7
+R8
+!i10b 1
+!s100 gA44j8dQz`KC5P<lSKh<32
+Ied8K`DVGUFOjY1>[z3XWd0
+S1
+R9
+R10
+R11
+R12
+!i122 0
+L0 99 22
+R13
+R14
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 0
+R18
+R5
+vtestbench
+R7
+R8
+!i10b 1
+!s100 VgzP@WO32nAn_@;jl31Go1
+I9VO;=2XF1eg9G9zK4PmfA0
+S1
+R9
+R10
+R11
+R12
+!i122 0
+L0 52 46
+R13
+R14
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 0
+R18
+R5
+vtop
+R7
+R8
+!i10b 1
+!s100 `^R=W5O[Hnl1O>kRiLQnM2
+Ij3S@9a3mD4QV0BB2I@eIL0
+S1
+R9
+R10
+R11
+R12
+!i122 0
+L0 318 13
+R13
+R14
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 0
+R18
+R5
