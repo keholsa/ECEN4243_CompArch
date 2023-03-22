@@ -132,10 +132,11 @@ module controller (input  logic [6:0] op,
    
    logic [1:0] 			      ALUOp;
    logic 			      Branch;
+   logic                              Upper;
    
    maindec md (op, ResultSrc, MemWrite, Branch,
-	       ALUSrc, RegWrite, Jump, ImmSrc, ALUOp);
-   aludec ad (op[5], funct3, funct7b5, ALUOp, ALUControl);
+	       ALUSrc, RegWrite, Jump, ImmSrc, ALUOp, Upper);
+   aludec ad (op[5], funct3, funct7b5, ALUOp, ALUControl, Upper);
    assign PCSrc = (Branch & (Zero ^ funct3[0])) | Jump;
    
 endmodule // controller
@@ -146,25 +147,26 @@ module maindec (input  logic [6:0] op,
 		output logic 	   Branch, ALUSrc,
 		output logic 	   RegWrite, Jump,
 		output logic [1:0] ImmSrc,
-		output logic [1:0] ALUOp);
+		output logic [1:0] ALUOp,
+                output logic       Upper);
    
-   logic [10:0] 		   controls;
+   logic [11:0] 		   controls;
    
    
    assign {RegWrite, ImmSrc, ALUSrc, MemWrite,
-	   ResultSrc, Branch, ALUOp, Jump} = controls;
+	   ResultSrc, Branch, ALUOp, Jump, Upper} = controls;
    
    always_comb
      case(op)
-       // RegWrite_ImmSrc_ALUSrc_MemWrite_ResultSrc_Branch_ALUOp_Jump
-       7'b0000011: controls = 11'b1_00_1_0_01_0_00_0; // lw
-       7'b0100011: controls = 11'b0_01_1_1_00_0_00_0; // sw
-       7'b0110011: controls = 11'b1_xx_0_0_00_0_10_0; // R–type
-       7'b1100011: controls = 11'b0_10_0_0_00_1_01_0; // beq
-       7'b0010011: controls = 11'b1_00_1_0_00_0_10_0; // I–type ALU
-       7'b1101111: controls = 11'b1_11_0_0_10_0_00_1; // jal
-       7'b0110111: controls = 11'b1_00_1_1_00_0_01_0; // lui
-       default: controls = 11'bx_xx_x_x_xx_x_xx_x; // ???
+       // RegWrite_ImmSrc_ALUSrc_MemWrite_ResultSrc_Branch_ALUOp_Jump_Upper
+       7'b0000011: controls = 12'b1_00_1_0_01_0_00_0_0; // lw
+       7'b0100011: controls = 12'b0_01_1_1_00_0_00_0_0; // sw
+       7'b0110011: controls = 12'b1_xx_0_0_00_0_10_0_0; // R–type
+       7'b1100011: controls = 12'b0_10_0_0_00_1_01_0_0; // beq
+       7'b0010011: controls = 12'b1_00_1_0_00_0_10_0_0; // I–type ALU
+       7'b1101111: controls = 12'b1_11_0_0_10_0_00_1_0; // jal
+       7'b0110111: controls = 12'b1_00_1_1_00_0_01_0_1; // lui
+       default: controls = 12'bx_xx_x_x_xx_x_xx_x_x; // ???
      endcase // case (op)
    
 endmodule // maindec
@@ -173,7 +175,8 @@ module aludec (input  logic       opb5,
 	       input  logic [2:0] funct3,
 	       input  logic 	  funct7b5,
 	       input  logic [1:0] ALUOp,
-	       output logic [3:0] ALUControl);
+	       output logic [3:0] ALUControl,
+               input  logic       Upper);
    
    logic 			  RtypeSub;
    
@@ -186,7 +189,7 @@ module aludec (input  logic       opb5,
       2'b01: begin 
         case(funct3) // R–type or I–type ALU
           3'b100: ALUControl = 4'b0001;
-          default: ALUControl = 4'b1001;
+          default: ALUControl = 4'b0000;
         endcase
       end
       default: begin
@@ -212,6 +215,9 @@ module aludec (input  logic       opb5,
         default: ALUControl = 4'bxxxx;
 
       endcase
+
+	if(Upper) ALUControl = 4'b1001;
+
       end
     endcase
 endmodule // aludec
